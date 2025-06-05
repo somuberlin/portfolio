@@ -86,7 +86,7 @@ section {
 
 .home{
     height: 100vh;
-    background: var(--bg-color);
+    background: url('Picsart_24-06-18_15-28-33-056.jpg') no-repeat;
     background-size: cover;
     background-position: center;
     display: flex;
