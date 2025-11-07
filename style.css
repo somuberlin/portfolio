@@ -998,6 +998,7 @@ span {
 
     #menu-icon{
         font-size: 23px;
+        margin-right: 50px;
     }
 
     .home{
@@ -1077,3 +1078,4 @@ span {
         margin-left: 315px;
     }
 }
+
