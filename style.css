@@ -17,6 +17,7 @@
     --text-color: #ededed;
     --main-color: #00abf0;
 }
+
 body{
     background: var(--bg-color);
     color: var(--text-color);
@@ -827,4 +828,252 @@ span {
 
 .footer-iconTop a:hover i{
     color: var(--main-color);
+}
+
+/* ===============================
+   MEDIA QUERIES FOR RESPONSIVE
+   =============================== */
+
+/* Large Tablets and Laptops (≤1200px) */
+@media (max-width: 1200px) {
+    .header {
+        padding: 20px 5%;
+    }
+
+    section {
+        padding: 4rem 7%;
+    }
+
+    .homecontent h1 {
+        font-size: 48px;
+    }
+
+    .homecontent .text-animate h3 {
+        font-size: 26px;
+    }
+
+    .homecontent p {
+        font-size: 15px;
+    }
+
+    .home-imgHover {
+        width: 600px;
+    }
+}
+
+/* Tablets (≤992px) */
+@media (max-width: 992px) {
+    #menu-icon {
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: -100%;
+        width: 100%;
+        padding: 1rem 0;
+        background: var(--second-bg-color);
+        text-align: center;
+        transition: .4s ease;
+    }
+
+    .navbar.active {
+        left: 0;
+    }
+
+    .navbar a {
+        display: block;
+        margin: 1.5rem 0;
+        font-size: 1.2rem;
+    }
+
+    .home {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 5%;
+        text-align: center;
+    }
+
+    .homecontent {
+        max-width: 100%;
+    }
+
+    .home-imgHover {
+        display: none;
+    }
+
+    .home-sci {
+        position: relative;
+        margin-top: 2rem;
+        bottom: 0;
+    }
+
+    .about-img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .education .education-row,
+    .skills .skills-row {
+        flex-direction: column;
+        gap: 3rem;
+    }
+}
+
+/* Small Tablets and Large Mobile Phones (≤768px) */
+@media (max-width: 768px) {
+
+    .home{
+        background: transparent;
+    }
+    .homecontent h1 {
+        font-size: 38px;
+    }
+
+    .homecontent .text-animate h3 {
+        font-size: 22px;
+        margin-left: 190px;
+    }
+
+    .btn-box {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 150px;
+    }
+
+    .about .heading{
+        margin-left: 15px;
+    }
+    .about .about-img{
+        margin-left: 10px;
+    }
+
+    .about .about-content{
+        margin-left: 10px;
+    }
+
+    .btn-box.btns .btn{
+        margin-left: -150px;
+    }
+
+    .wrap {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .wrap img {
+        width: 90%;
+    }
+
+    .about-content p,
+    .education-content .content p,
+    .skills-content .progress h3 {
+        font-size: 0.9rem;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+    .footer-iconTop{
+        position: relative;
+        display: flex;
+        margin-top: -40px;
+        margin-left: 600px;
+    }
+}
+
+
+/* Mobile Phones (≤480px) */
+@media (max-width: 480px) {
+    html {
+        font-size: 85%;
+    }
+
+    #menu-icon{
+        font-size: 23px;
+    }
+
+    .home{
+        background: transparent;
+    }
+
+    .header {
+        padding: 15px 5%;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .homecontent h1 {
+        font-size: 32px;
+    }
+    .homecontent .text-animate h3 {
+        font-size: 20px;
+        margin-left: -75px;
+    }
+
+    .homecontent p {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .homecontent .btn-box{
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 20px;
+    }
+
+    .about-img {
+        width: 160px;
+        height: 160px;
+    }
+
+    .wrap {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+    .contact form .input-box .input-field {
+        width: 100%;
+    }
+
+    .contact form .input-box .input-field input,
+    .contact form .textarea-field textarea {
+        width: 100%;
+    }
+
+    .skills .skills-row {
+        gap: 2rem;
+    }
+
+    .skills-content .progress .bar {
+        height: 1rem;
+    }
+
+    .contact{
+        width: 100%;
+    }
+
+    .footer{
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .footer-iconTop{
+        position: relative;
+        display: flex;
+        margin-top: -50px;
+        margin-left: 315px;
+    }
 }
